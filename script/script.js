@@ -22,7 +22,7 @@ function addEventListenersToLetters() {
         const letterValue = element.getAttribute('data-letter');
         const imageElement = document.querySelector('.img-' + letterValue);
 
-        const newImageUrl = '/img/Letters-Hover/' + letterValue + '.gif';
+        const newImageUrl = 'img/Letters-Hover/' + letterValue + '.gif';
         // console.log('image:', newImageUrl);
         imageElement.src = newImageUrl;
       });
@@ -33,7 +33,7 @@ function addEventListenersToLetters() {
         const letterValue = element.getAttribute('data-letter');
         const imageElement = document.querySelector('.img-' + letterValue);
 
-        const newImageUrl = '/img/Letters/' + letterValue + '.png';
+        const newImageUrl = 'img/Letters/' + letterValue + '.png';
         imageElement.src = newImageUrl;
       });
 
