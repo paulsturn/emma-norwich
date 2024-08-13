@@ -2,7 +2,6 @@
 function addEventListenersToLetters() {
   // Select all elements with the class 'letter'
   const letterElements = document.querySelectorAll('.letter');
-  const resultDiv = document.querySelector('.result');
   const imageElement = document.querySelector('.image');
 
   // For  each letter
@@ -12,7 +11,7 @@ function addEventListenersToLetters() {
       element.addEventListener('click', () => {
         const letterValue = element.getAttribute('data-letter');
         console.log('Letter element clicked:', letterValue);
-        resultDiv.textContent = letterValue;
+        // resultDiv.textContent = letterValue;
       });
 
       // Mouseover event 
