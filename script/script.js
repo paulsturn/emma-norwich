@@ -3,6 +3,15 @@ function addEventListenersToLetters() {
   // Select all elements with the class 'letter'
   const letterElements = document.querySelectorAll('.letter');
   const imageElement = document.querySelector('.image');
+  const popup = document.getElementById('overlay');
+  const popupClose = document.getElementById('close-overlay');
+
+
+  // Close overlay
+  popupClose.addEventListener('click', () => {
+    popup.classList.remove('overlay-show');
+  });
+
 
   // For  each letter
   letterElements.forEach(element => {
@@ -12,6 +21,12 @@ function addEventListenersToLetters() {
         const letterValue = element.getAttribute('data-letter');
         console.log('Letter element clicked:', letterValue);
         // resultDiv.textContent = letterValue;
+
+        popup.classList.add('overlay-show');
+
+
+
+
       });
 
       // Mouseover event 

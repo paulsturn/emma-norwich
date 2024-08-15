@@ -31,6 +31,9 @@ body {
   color: #444;
 }
 
+
+
+
 .box {
   background-color: #f9fbf9;
   padding: 0;
@@ -62,14 +65,67 @@ body {
 .letter{
   padding:4%;
   margin:0;
-  xheight:200px;
-  xwidth:200px;
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 150mS;
 }
 .letter:hover{
   cursor: pointer;
   transform: scale(1.02);
 }
+
+#overlay{
+  position:absolute;
+  background-color:#fff;
+  border:solid 4px #444;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:50%;
+  min-height:50%;
+  padding:.2rem;  
+  z-index:50;
+}
+
+.overlay-inner{
+  position: relative;
+  padding:1rem 2rem 1rem 1rem;
+}
+
+.close{
+  position: absolute;
+  right: .5rem;
+  top: .2rem;
+  text-align: right;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.overlay-style{
+  display:none;
+}
+.overlay-show{
+  display:block;
+}
+
+.overlay-inner{
+
+}
+
+#overlay h1{
+  margin: 0 0 1rem 0;
+}
+
+
+.tint{
+  position:absolute;
+  top:0;
+  left:0;
+  width:10px;
+  height:10px;
+  xbackground-color: #00000060;
+  z-index:50;
+}
+
 .words{
   display:flex;
 }
