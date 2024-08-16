@@ -31,8 +31,9 @@ body {
   color: #444;
 }
 
-
-
+ul{
+  padding: 0 0 0 0;
+}
 
 .box {
   background-color: #f9fbf9;
@@ -69,7 +70,7 @@ body {
 }
 .letter:hover{
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 
 #overlay{
@@ -79,16 +80,27 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width:50%;
-  min-height:50%;
+  width:60%;
+  min-height:40%;
   padding:.2rem;  
   z-index:50;
 }
 
 .overlay-inner{
+  display:flex;
   position: relative;
   padding:1rem 2rem 1rem 1rem;
 }
+
+.overlay-left{
+  width:20%;
+  padding-right:2%;
+}
+
+.overlay-right{
+  width:78%;
+}
+
 
 .close{
   position: absolute;
@@ -115,6 +127,9 @@ body {
   margin: 0 0 1rem 0;
 }
 
+.img-overlay{
+  width:140px;
+}
 
 .tint{
   position:absolute;
