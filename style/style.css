@@ -31,6 +31,12 @@ body {
   color: #444;
 }
 
+
+h1{
+  font-family: 'aw-conqueror-didot', serif;
+  padding: 10px;
+  margin: 0;
+}
 ul{
   padding: 0 0 0 0;
 }
