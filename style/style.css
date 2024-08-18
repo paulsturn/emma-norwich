@@ -17,7 +17,7 @@ body {
     font-family: Quicksand, sans-serif;
     background-color:#ffffff;
     padding:0;
-    margin:0;  
+    margin: 0 8%;
     height:100vh;
     user-select: none;
 }
