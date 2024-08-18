@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: Quicksand, sans-serif;
-    background-color:#ffffff;
+    background-color: #f6faf6;
     padding:0;
     margin: 0 8%;
     height:100vh;
@@ -26,8 +26,7 @@ body {
 .wrapper {
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: 56% 43.4%;
-  background-color: #fff;
+  grid-template-columns: 56% 43.45%;
   color: #444;
 }
 
@@ -42,7 +41,7 @@ ul{
 }
 
 .box {
-  background-color: #f9fbf9;
+  background-color: #f6faf6;
   padding: 0;
   margin: 0;
 }
@@ -74,6 +73,11 @@ ul{
   cursor: pointer;
   transform: scale(1.04);
 }
+
+.adjust-for-z .letter{
+  padding:8.5px 10px;
+}
+
 
 #overlay,
 #overlay-about{
