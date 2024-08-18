@@ -73,7 +73,8 @@ ul{
   transform: scale(1.04);
 }
 
-#overlay{
+#overlay,
+#overlay-about{
   position:absolute;
   background-color:#fff;
   border:solid 4px #444;
@@ -125,6 +126,10 @@ ul{
 
 #overlay h1{
   margin: 0 0 1rem 0;
+}
+
+h1 span{
+  border-bottom:solid 3px #000;
 }
 
 .img-overlay{

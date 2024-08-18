@@ -1,16 +1,17 @@
 // Function to add event listeners to elements with class 'letter'
 function addEventListenersToLetters() {
   // Select all elements with the class 'letter'
-  const letterElements = document.querySelectorAll('.letter');
-  const imageElement = document.querySelector('.image');
-  const popup = document.getElementById('overlay');
-  const popupClose = document.getElementById('close-overlay');
-
 
   // Close overlay
   popupClose.addEventListener('click', () => {
     popup.classList.remove('overlay-show');
   });
+
+  // Close about overlay
+  aboutClose.addEventListener('click', () => {
+    about.classList.remove('overlay-show');
+  });
+
 
 
   // For  each letter
@@ -54,11 +55,6 @@ function addEventListenersToLetters() {
   });
 }
 
-// Call the function to add the event listeners
-addEventListenersToLetters();
-
-
-
 function getRandomLetter() {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
   const randomIndex = Math.floor(Math.random() * alphabet.length);
@@ -79,7 +75,7 @@ function startRandomLetterTimer() {
       // Animate random letter
       // const imageElement = document.querySelector('.img-' + randomLetter);
 
-      // const newImageUrl = '/img/Letters-Hover/' + randomLetter + '.gif';
+      const newImageUrl = '/img/Letters-Hover/' + randomLetter + '.gif';
       // imageElement.src = newImageUrl;
   }, 1000);
 
@@ -98,9 +94,30 @@ function resetMouseMoveTimer() {
   }, 5000); // 5000 milliseconds = 5 seconds
 }
 
+function showAboutBox(){
+  about.classList.add('overlay-show');
+}
+
+
+
+// Initialisation 
+
+const letterElements = document.querySelectorAll('.letter');
+const imageElement = document.querySelector('.image');
+const popup = document.getElementById('overlay');
+const about = document.getElementById('overlay-about');
+const popupClose = document.getElementById('close-overlay');
+const aboutClose = document.getElementById('close-about');
+
+
 // Attach the resetMouseMoveTimer function to the mousemove event
 document.addEventListener('mousemove', resetMouseMoveTimer);
 
 // Start the initial timer in case the mouse doesn't move right away
 resetMouseMoveTimer();
+
+// Call the function to add the event listeners
+addEventListenersToLetters();
+
+showAboutBox();
 
