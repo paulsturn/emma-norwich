@@ -84,7 +84,7 @@ const alphabet = [
     },
     { 
         letter: "J",
-        title: "<span>J</span>Julian of Norwich", 
+        title: "<span>J</span>ulian of Norwich", 
         body: "<p>Julian of Norwich was a 14th century anchoress and mystic who was the first woman to write a book in the English language. Referred to as ‘the mother of English literature’ her book ‘Revelations of Divine Love’ documents the 16 extraordinary visions she experienced whilst believing to be on her deathbed. She lived a life of quiet contemplation and prayer in a cell attached to St Julian’s church on Rouen Road, which still stands today.</p><p>The Julian Shrine visitor centre is located next door and has a gift shop, library, and guest accommodation for people to visit.  </p>",
         links: {
             l1: "https://www.julianshrine.org",
@@ -161,7 +161,7 @@ const alphabet = [
     { 
         letter: "S",
         title: "C.J <span>S</span>ansom", 
-        body: "<p>Sansom was one of Britain’s bestselling historical novelists, known in particular for his mystery novels featuring barrister Matthew Shardlake, set in Tudor England. The seventh novel in the Shardlake series is ‘Tombland’, published in 2018, which is largely set in 1549 in Norwich and features well known landmarks and locations such as Mousehold Heath, Norwich Castle, Guildhall, Elm Hill, Kett’s Heights, and more. Shardlake’s arrival in Norfolk coincides with the peasant’s rebellion of the same year led by Robert Kett.</p>",
+        body: "<p>Sansom was one of Britain’s bestselling historical novelists, known in particular for his mystery novels featuring barrister Matthew Shardlake, set in Tudor England.</p><p>The seventh novel in the Shardlake series is ‘Tombland’, published in 2018, which is largely set in 1549 in Norwich and features well known landmarks and locations such as Mousehold Heath, Norwich Castle, Guildhall, Elm Hill, Kett’s Heights, and more. Shardlake’s arrival in Norfolk coincides with the peasant’s rebellion of the same year led by Robert Kett.</p>",
         links: {
             l1: "https://www.youtube.com/watch?v=wOqj1Ol5HkA&t=1s",
         } 
@@ -194,34 +194,36 @@ const alphabet = [
     },
     { 
         letter: "W",
-        title: "<span>F</span>orum", 
-        body: "<p>’</p>",
+        title: "<span>W</span>riting on the wall", 
+        body: "<p>In 2006, local Artist Rory Macbeth painted all 40,000 words of Thomas More’s novel ‘Utopia’ onto the walls of an old Eastern Electricity building on Westwick Street.</p><p>As part of an art exhibition Rory Macbeth stated, ‘the novel is as valid now as it was when it was written.’ This ‘Writing On The Wall’ was to be demolished within a year, however still stands today. </p>",
         links: {
-            l1: "",
+            l1: "https://www.eveningnews24.co.uk/news/22372178.know-real-story-behind-one-norwichs-noticeable-graffiti-works/ ",
         } 
     },
     { 
         letter: "X",
-        title: "<span>F</span>orum", 
-        body: "<p>’</p>",
+        title: "IL<span>X</span>", 
+        body: "<p>For more than a decade, British Council and National Centre for Writing have been working together to curate the International Literature Exchange (ILX).</p><p>ILX brings literature professionals together to learn, exchange expertise and experience, devise collaborations, and build international networks. Running from 2024-26, the newest round of ILX explores the unique challenges and opportunities facing all those who work with words, books, and literature. The ILX10 are a selection of 10 early career writers based in the UK whose work has powerful potential to speak and to engage with global literary audiences.</p>",
         links: {
-            l1: "",
+            l1: "https://nationalcentreforwriting.org.uk/international-literature-exchange/",
         } 
     },
     { 
         letter: "Y",
-        title: "<span>F</span>orum", 
-        body: "<p>’</p>",
+        title: "Pla<span>y</span>house", 
+        body: "<p>Norwich Theatre Playhouse is an intimate 300 seat riverside venue, which celebrated its 25th Anniversary in 2020.</p><p>The building dates back to the 19th century and was once a maltings but since becoming a theatre it has become recognised as one of the best fringe venues in the country and is also home to the famous Playhouse Bar.</p>",
         links: {
-            l1: "",
+            l1: "https://norwichtheatre.org/your-visit/norwich-theatre-playhouse/",
         } 
     },
     { 
         letter: "Z",
-        title: "<span>F</span>orum", 
-        body: "<p>’</p>",
+        title: "Janina Ramire<span>z</span>", 
+        body: "<p>Dr. Janina Ramirez is a cultural historian, broadcaster, and author based at the University of Oxford, where she is a lecturer and course director.</p><p>With an academic background, she has taught at York, Warwick, and Winchester Universities, as well as the Victoria and Albert Museum.</p><p>Janina is the author of notable works such as Femina and Julian of Norwich: A Brief History, both essential resources for understanding Norwich’s significant contributions to literary history. </p>",
         links: {
-            l1: "",
+            l1: "https://www.janinaramirez.co.uk",
+            l2: "https://debalie.nl/programma/femina-feminist-history-lessons-with-janina-ramirez-24-04-2023/ ",
+            l3: "https://www.bbc.co.uk/news/uk-england-norfolk-52020227",
         } 
     },
   ];
