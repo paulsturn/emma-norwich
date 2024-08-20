@@ -90,6 +90,7 @@ function resetMouseMoveTimer() {
 }
 
 function showAboutBox(){
+  tint.classList.add('tint-show');
   about.classList.add('overlay-show');
 }
 
@@ -178,5 +179,5 @@ resetMouseMoveTimer();
 // Call the function to add the event listeners
 addEventListenersToLetters();
 
-// showAboutBox();
+showAboutBox();
 
