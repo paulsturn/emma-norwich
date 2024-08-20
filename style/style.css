@@ -33,11 +33,16 @@ body {
 
 h1{
   font-family: 'aw-conqueror-didot', serif;
+  font-size:2.4rem;
   padding: 10px;
   margin: 0;
 }
-ul{
+ul.links{
   padding: 0 0 0 0;
+}
+ul.links li{
+  font-size: 14px;
+  padding: 0 0 6px 0;
 }
 
 .box {
@@ -105,7 +110,7 @@ ul{
 }
 
 .overlay-right{
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 2rem;
   width:78%;
 }
 
@@ -127,12 +132,10 @@ ul{
   display:block;
 }
 
-.overlay-inner{
-
-}
-
 #overlay h1{
+  font-size:2.4rem;
   margin: 0 0 1rem 0;
+  padding:0;
 }
 
 #overlay p{
@@ -150,13 +153,18 @@ h1 span{
 }
 
 .tint{
+  display:none;
   position:absolute;
   top:0;
   left:0;
-  width:10px;
-  height:10px;
-  xbackground-color: #00000060;
+  width:100%;
+  height:100%;
+  background-color: #00000080;
   z-index:50;
+}
+
+.tint-show{
+  display:block;
 }
 
 .words{

@@ -5,11 +5,13 @@ function addEventListenersToLetters() {
   // Close overlay
   popupClose.addEventListener('click', () => {
     popup.classList.remove('overlay-show');
+    tint.classList.remove('tint-show');
   });
 
   // Close about overlay
   aboutClose.addEventListener('click', () => {
     about.classList.remove('overlay-show');
+    tint.classList.remove('tint-show');
   });
 
 
@@ -20,11 +22,9 @@ function addEventListenersToLetters() {
       // Click event
       element.addEventListener('click', () => {
         const letterValue = element.getAttribute('data-letter');
-        console.log('Letter element clicked:', letterValue);
-
         
+        tint.classList.add('tint-show');
         displayDetails(letterValue.toUpperCase());
-
         popup.classList.add('overlay-show');
 
       });
@@ -127,9 +127,30 @@ function displayDetails(letter) {
   w_image.innerHTML = `<img src='img/Letters/${letterLower}.webp'>`;
   w_title.innerHTML = `${currentLetter.title}`;
   w_body.innerHTML = `${currentLetter.body}`;
-  w_links.innerHTML = `${currentLetter.links}`;
+  // w_links.innerHTML = `${currentLetter.links}`;
 
- 
+  var subChildHtml = '';
+
+  for (const key in currentLetter.links) {
+    if (currentLetter.links.hasOwnProperty(key)) {
+
+      var linkURL = currentLetter.links[key];
+      var linkText = linkURL;
+
+      // append to result
+      subChildHtml += '<li><a href="' + linkURL + '" target="_blank">' + linkText + '</a></li>';
+
+    } 
+
+
+    if (subChildHtml != "") {
+        w_links.innerHTML = '<h5>More reading</h5><ul class="links">' + subChildHtml + '</ul>';
+    }
+
+} 
+
+
+
 }
 
 
@@ -144,7 +165,7 @@ const popup = document.getElementById('overlay');
 const about = document.getElementById('overlay-about');
 const popupClose = document.getElementById('close-overlay');
 const aboutClose = document.getElementById('close-about');
-
+const tint = document.getElementById('tint');
 
 
 
