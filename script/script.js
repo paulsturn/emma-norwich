@@ -23,7 +23,7 @@ function addEventListenersToLetters() {
         console.log('Letter element clicked:', letterValue);
 
         
-        displayDetails(getAlphabetIndex(letterValue));
+        displayDetails(letterValue.toUpperCase());
 
         popup.classList.add('overlay-show');
 
@@ -96,10 +96,10 @@ function showAboutBox(){
 
 function getAlphabetIndex(letter) {
   // Convert the letter to uppercase to handle both cases
-  let upperLetter = letter.toUpperCase();
+ let upperLetter = letter.toUpperCase();
 
   // Get the ASCII value of the letter and subtract the ASCII value of 'A' + 1
-  let position = upperLetter.charCodeAt(0) - 'A'.charCodeAt(0) + 1;
+  let position = upperLetter.charCodeAt(0) - 'A'.charCodeAt(0);
 
   return position;
 }
@@ -114,30 +114,21 @@ function displayDetails(letter) {
   }
       
   let letterIndex  = getAlphabetIndex(letter);
-
+  let letterLower = letter.toLowerCase();
 
   const currentLetter = alphabet[letterIndex];
-  const w_title = document.getElementById('w_title');
 
-  const w_titleDiv = document.getElementById('w_title');
+  const w_image = document.getElementById("w_image");
+  const w_title = document.getElementById('w_title');
   const w_body = document.getElementById('w_body');
   const w_links = document.getElementById('w_links');
 
 
-  w_titleDiv.innerHTML = `${currentLetter.title}`;
+  w_image.innerHTML = `<img src='img/Letters/${letterLower}.webp'>`;
+  w_title.innerHTML = `${currentLetter.title}`;
   w_body.innerHTML = `${currentLetter.body}`;
   w_links.innerHTML = `${currentLetter.links}`;
 
-  
-  // w_image.innerHTML = `<img src='assets/img/${currentItem.image}'>`;
-
-
-  // if (currentItem.info != '') {
-  //   w_infoDiv.innerHTML = `${currentItem.info}`;          
-  // }
-  // else{
-  //   w_infoDiv.innerHTML = '';
-  // }
  
 }
 
