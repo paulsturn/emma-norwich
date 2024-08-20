@@ -21,24 +21,19 @@ function addEventListenersToLetters() {
       element.addEventListener('click', () => {
         const letterValue = element.getAttribute('data-letter');
         console.log('Letter element clicked:', letterValue);
-        // resultDiv.textContent = letterValue;
+
+        
+        displayDetails(getAlphabetIndex(letterValue));
 
         popup.classList.add('overlay-show');
-
-
-
 
       });
 
       // Mouseover event 
       element.addEventListener('mouseover', () => {
-        // element.style.backgroundColor = 'lightblue';
-        // const newImageUrl = element.getAttribute('data-image-url');
         const letterValue = element.getAttribute('data-letter');
         const imageElement = document.querySelector('.img-' + letterValue);
-
         const newImageUrl = 'img/Letters-Hover/' + letterValue + '.gif';
-        // console.log('image:', newImageUrl);
         imageElement.src = newImageUrl;
       });
 
@@ -71,7 +66,7 @@ function startRandomLetterTimer() {
   // Start the 9-second interval
   randomLetterInterval = setInterval(() => {
       const randomLetter = getRandomLetter();
-      console.log(randomLetter);
+
       // Animate random letter
       // const imageElement = document.querySelector('.img-' + randomLetter);
 
@@ -99,6 +94,56 @@ function showAboutBox(){
 }
 
 
+function getAlphabetIndex(letter) {
+  // Convert the letter to uppercase to handle both cases
+  let upperLetter = letter.toUpperCase();
+
+  // Get the ASCII value of the letter and subtract the ASCII value of 'A' + 1
+  let position = upperLetter.charCodeAt(0) - 'A'.charCodeAt(0) + 1;
+
+  return position;
+}
+
+
+function displayDetails(letter) {
+  
+  // If no alphabet then exit
+  if (typeof alphabet === "undefined") { 
+    console.log("Data file not found"); 
+    return;
+  }
+      
+  let letterIndex  = getAlphabetIndex(letter);
+
+
+  const currentLetter = alphabet[letterIndex];
+  const w_title = document.getElementById('w_title');
+
+  const w_titleDiv = document.getElementById('w_title');
+  const w_body = document.getElementById('w_body');
+  const w_links = document.getElementById('w_links');
+
+
+  w_titleDiv.innerHTML = `${currentLetter.title}`;
+  w_body.innerHTML = `${currentLetter.body}`;
+  w_links.innerHTML = `${currentLetter.links}`;
+
+  
+  // w_image.innerHTML = `<img src='assets/img/${currentItem.image}'>`;
+
+
+  // if (currentItem.info != '') {
+  //   w_infoDiv.innerHTML = `${currentItem.info}`;          
+  // }
+  // else{
+  //   w_infoDiv.innerHTML = '';
+  // }
+ 
+}
+
+
+
+
 
 // Initialisation 
 
@@ -110,6 +155,8 @@ const popupClose = document.getElementById('close-overlay');
 const aboutClose = document.getElementById('close-about');
 
 
+
+
 // Attach the resetMouseMoveTimer function to the mousemove event
 document.addEventListener('mousemove', resetMouseMoveTimer);
 
@@ -119,5 +166,5 @@ resetMouseMoveTimer();
 // Call the function to add the event listeners
 addEventListenersToLetters();
 
-showAboutBox();
+// showAboutBox();
 
