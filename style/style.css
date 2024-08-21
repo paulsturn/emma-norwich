@@ -96,6 +96,7 @@ ul.links li{
   min-height:40%;
   padding:.2rem;  
   z-index:50;
+  visibility:0;
 }
 
 .overlay-inner{
@@ -111,9 +112,8 @@ ul.links li{
 
 .overlay-right{
   padding: 0 0 0 2rem;
-  width:78%;
+  width:100%;
 }
-
 
 .close{
   position: absolute;
@@ -123,13 +123,6 @@ ul.links li{
   font-size: 22px;
   font-weight: 600;
   font-family: 'Courier New', Courier, monospace;
-}
-
-.overlay-style{
-  display:none;
-}
-.overlay-show{
-  display:block;
 }
 
 #overlay h1{
@@ -153,7 +146,7 @@ h1 span{
 }
 
 .tint{
-  display:none;
+  visibility:0;
   position:absolute;
   top:0;
   left:0;
@@ -163,9 +156,18 @@ h1 span{
   z-index:50;
 }
 
-.tint-show{
-  display:block;
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease-in-out, visibility 1s ease-in-out;
 }
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .2s ease-in-out, visibility 1s ease-in-out;
+}
+
 
 .words{
   display:flex;

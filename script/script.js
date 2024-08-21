@@ -4,14 +4,24 @@ function addEventListenersToLetters() {
 
   // Close overlay
   popupClose.addEventListener('click', () => {
-    popup.classList.remove('overlay-show');
-    tint.classList.remove('tint-show');
+
+    tint.classList.remove("visible");
+    tint.classList.add("hidden");
+
+    popup.classList.remove("visible");
+    popup.classList.add("hidden");
+
   });
 
   // Close about overlay
   aboutClose.addEventListener('click', () => {
-    about.classList.remove('overlay-show');
-    tint.classList.remove('tint-show');
+
+    tint.classList.remove("visible");
+    tint.classList.add("hidden");
+
+    about.classList.remove("visible");
+    about.classList.add("hidden");
+
   });
 
 
@@ -23,9 +33,13 @@ function addEventListenersToLetters() {
       element.addEventListener('click', () => {
         const letterValue = element.getAttribute('data-letter');
         
-        tint.classList.add('tint-show');
         displayDetails(letterValue.toUpperCase());
-        popup.classList.add('overlay-show');
+
+        tint.classList.remove("hidden");
+        tint.classList.add("visible");
+
+        popup.classList.remove("hidden");
+        popup.classList.add("visible");
 
       });
 
@@ -63,18 +77,33 @@ function startRandomLetterTimer() {
   // Clear any existing interval to prevent multiple intervals from running
   clearInterval(randomLetterInterval);
 
-  // Start the 9-second interval
+  // Start the interval
   randomLetterInterval = setInterval(() => {
-      const randomLetter = getRandomLetter();
+    removeAnimations();
 
-      // Animate random letter
-      // const imageElement = document.querySelector('.img-' + randomLetter);
+    // Animate random letter
+    const letterValue = getRandomLetter();
+    const imageElement = document.querySelector('.img-' + letterValue);
+    const newImageUrl = '/img/Letters-Hover/' + letterValue + '.gif';
+    imageElement.src = newImageUrl;
 
-      const newImageUrl = '/img/Letters-Hover/' + randomLetter + '.gif';
-      // imageElement.src = newImageUrl;
-  }, 1000);
+  }, 6000);
 
 }
+
+function removeAnimations(){
+
+  for (let i = 0; i < 26; i++) {
+    let letter = String.fromCharCode(97 + i);
+    
+    const imageElement = document.querySelector('.img-' + letter);
+    const newImageUrl = 'img/Letters/' + letter + '.png';
+    imageElement.src = newImageUrl;
+  }
+
+
+}
+
 
 function resetMouseMoveTimer() {
   // Clear any existing timeout
@@ -83,15 +112,23 @@ function resetMouseMoveTimer() {
   // Clear the interval if the mouse moves
   clearInterval(randomLetterInterval);
 
-  // Start a new timeout that waits for 5 seconds of inactivity
+  // Start a new timeout that waits for n seconds of inactivity
   mouseMoveTimeout = setTimeout(() => {
       startRandomLetterTimer();
-  }, 5000); // 5000 milliseconds = 5 seconds
+  }, 6000); // 5000 milliseconds = 5 seconds
 }
 
 function showAboutBox(){
-  tint.classList.add('tint-show');
-  about.classList.add('overlay-show');
+
+// initial popup hidden
+popup.classList.remove("visible");
+popup.classList.add("hidden");
+
+tint.classList.remove("hidden");
+tint.classList.add("visible");
+
+about.classList.remove("hidden");
+about.classList.add("visible");
 }
 
 
