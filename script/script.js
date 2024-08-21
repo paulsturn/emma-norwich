@@ -97,6 +97,9 @@ function removeAnimations(){
     
     const imageElement = document.querySelector('.img-' + letter);
     const newImageUrl = 'img/Letters/' + letter + '.png';
+
+    console.log(newImageUrl);
+
     imageElement.src = newImageUrl;
   }
 
@@ -184,12 +187,9 @@ function displayDetails(letter) {
         w_links.innerHTML = '<h5>More reading</h5><ul class="links">' + subChildHtml + '</ul>';
     }
 
-} 
-
-
+  } 
 
 }
-
 
 
 
