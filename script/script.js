@@ -83,7 +83,7 @@ function startRandomLetterTimer() {
     // Animate random letter
     const letterValue = getRandomLetter();
     const imageElement = document.querySelector('.img-' + letterValue);
-    const newImageUrl = '/img/Letters-Hover/' + letterValue + '.gif';
+    const newImageUrl = 'img/Letters-Hover/' + letterValue + '.gif';
     imageElement.src = newImageUrl;
 
   }, 6000);
