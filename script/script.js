@@ -47,6 +47,9 @@ function addEventListenersToLetters() {
         const letterValue = element.getAttribute('data-letter');
         const imageElement = document.querySelector('.img-' + letterValue);
         const newImageUrl = 'img/Letters-Hover/' + letterValue + '.gif';
+
+        console.log(newImageUrl);
+
         imageElement.src = newImageUrl;
       });
 
