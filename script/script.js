@@ -98,8 +98,6 @@ function removeAnimations(){
     const imageElement = document.querySelector('.img-' + letter);
     const newImageUrl = 'img/Letters/' + letter + '.png';
 
-    console.log(newImageUrl);
-
     imageElement.src = newImageUrl;
   }
 
