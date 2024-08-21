@@ -38,7 +38,7 @@ const alphabet = [
     { 
         letter: "E",
         title: "<span>E</span>mma Healey", 
-        body: "<p>Emma Healey is the Norwich-based best-selling author of Elizabeth is Missing (2014). The novel, which has now sold over a million copies worldwide, is narrated by an elderly woman with dementia who is determined to discover what has happened to her friend, and what it has to do with the unsolved disappearance of her sister Sukey just after the Second World War. When talking with Visit Norwich in the ‘Settee of Stories’ blog, Emma stated that she has ‘travelled to a lot of cities all over the world, but I’ve never had the feeling of coming home that I had when I first came to Norwich. It’s big enough to have everything you need, but small enough to feel friendly.’</p>",
+        body: "<p>Emma Healey is the Norwich-based best-selling author of Elizabeth is Missing (2014). The novel, which has now sold over a million copies worldwide, is narrated by an elderly woman with dementia who is determined to discover what has happened to her friend, and what it has to do with the unsolved disappearance of her sister Sukey just after the Second World War.</p><p>When talking with Visit Norwich in the ‘Settee of Stories’ blog, Emma stated that she has ‘travelled to a lot of cities all over the world, but I’ve never had the feeling of coming home that I had when I first came to Norwich. It’s big enough to have everything you need, but small enough to feel friendly.’</p>",
         links: {
             l1: "https://www.emmahealey.co.uk",
             l2: "https://www.visitnorwich.co.uk/article/settee-of-stories-a-sitdown-with-emma-healey/",
@@ -119,7 +119,7 @@ const alphabet = [
     { 
         letter: "N",
         title: "<span>N</span>ational Centre for Writing", 
-        body: "<p>The National Centre for Writing is a contemporary literature house and writing hub at Dragon Hall, holding events, residencies, activities, and festivals. As a charity they work with writers, literary translators, young people, schools, families, and communities. With some of their patrons including Margaret Atwood, JM Coetzee, and John Boyne, their mission is ‘to be a resilient, internationally networked creative house and hub for literature, celebrating our stories past and nurturing our literary futures’- National Centre for Writing. </p>",
+        body: "<p>The National Centre for Writing is a contemporary literature house and writing hub at Dragon Hall, holding events, residencies, activities, and festivals. As a charity they work with writers, literary translators, young people, schools, families, and communities.</p><p> With some of their patrons including Margaret Atwood, JM Coetzee, and John Boyne, their mission is ‘to be a resilient, internationally networked creative house and hub for literature, celebrating our stories past and nurturing our literary futures’- National Centre for Writing. </p>",
         links: {
             l1: "https://nationalcentreforwriting.org.uk",
         } 
@@ -127,7 +127,7 @@ const alphabet = [
     { 
         letter: "O",
         title: "Amelia <span>O</span>pie", 
-        body: "<p>Born and raised in Norwich, Amelia Opie was a novelist, poet, radical and philanthropist of the Romantic period. Her earliest poems were published when she was a teenager, and she began her literary career by writing classical and gothic drama with her best remembered novel being ‘Adeline Mowbray’. Opie represented Norwich in the national anti-slavery convention in 1840 as well as associating with the controversial literary and political Godwin Circle, which included writers such as Thomas Holcroft, Elizabeth Inchbald, and Mary Wollstonecraft. Her statue, designed by J.P.Chaplin and sculpted by Z.Leon, can be seen on Opie street. </p>",
+        body: "<p>Born and raised in Norwich, Amelia Opie was a novelist, poet, radical and philanthropist of the Romantic period. Her earliest poems were published when she was a teenager, and she began her literary career by writing classical and gothic drama with her best remembered novel being ‘Adeline Mowbray’. </p><p>Opie represented Norwich in the national anti-slavery convention in 1840 as well as associating with the controversial literary and political Godwin Circle, which included writers such as Thomas Holcroft, Elizabeth Inchbald, and Mary Wollstonecraft. Her statue, designed by J.P.Chaplin and sculpted by Z.Leon, can be seen on Opie street. </p>",
         links: {
             l1: "https://norfolkrecordofficeblog.org/amelia-opie/",
         } 
