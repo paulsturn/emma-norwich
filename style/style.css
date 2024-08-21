@@ -85,7 +85,8 @@ ul.links li{
 
 
 #overlay,
-#overlay-about{
+#overlay-about,
+#overlay-author{
   position:absolute;
   background-color:#fff;
   border:solid 4px #444;

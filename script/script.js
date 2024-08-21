@@ -25,6 +25,19 @@ function addEventListenersToLetters() {
   });
 
 
+  // Close Author overlay
+authorClose.addEventListener('click', () => {
+
+    tint.classList.remove("visible");
+    tint.classList.add("hidden");
+
+    author.classList.remove("visible");
+    author.classList.add("hidden");
+
+  });
+
+
+
   // For  each letter
   letterElements.forEach(element => {
 
@@ -127,12 +140,35 @@ function showAboutBox(){
   popup.classList.remove("visible");
   popup.classList.add("hidden");
 
+  author.classList.remove("visible");
+  author.classList.add("hidden");
+
   tint.classList.remove("hidden");
   tint.classList.add("visible");
 
   about.classList.remove("hidden");
   about.classList.add("visible");
 }
+
+
+// function showAuthortBox(){
+
+//   // initial popup hidden
+//   popup.classList.remove("visible");
+//   popup.classList.add("hidden");
+
+//   // initial author hidden
+//   author.classList.remove("hidden");
+//   author.classList.add("visible");
+
+//   // initial tint hidden
+//   tint.classList.remove("hidden");
+//   tint.classList.add("visible");
+
+
+// }
+
+
 
 
 function getAlphabetIndex(letter) {
@@ -199,13 +235,19 @@ function displayDetails(letter) {
 
 const letterElements = document.querySelectorAll('.letter');
 const imageElement = document.querySelector('.image');
+
 const popup = document.getElementById('overlay');
 const about = document.getElementById('overlay-about');
+const author = document.getElementById('overlay-author');
+
 const iconAbout = document.getElementById('iconAbout');
+const iconAuthor = document.getElementById('iconAuthor');
+
 const popupClose = document.getElementById('close-overlay');
 const aboutClose = document.getElementById('close-about');
-const tint = document.getElementById('tint');
+const authorClose = document.getElementById('close-author');
 
+const tint = document.getElementById('tint');
 
 
 // Attach about button toggle
@@ -216,6 +258,20 @@ iconAbout.addEventListener('click', () => {
   tint.classList.toggle("visible");
   tint.classList.toggle("hidden");
 });
+
+
+// Attach author button toggle
+iconAuthor.addEventListener('click', () => {
+
+  console.log('Icon ');
+
+  author.classList.toggle("visible");
+  author.classList.toggle("hidden");
+
+  tint.classList.toggle("visible");
+  tint.classList.toggle("hidden");
+});
+
 
 // Attach the resetMouseMoveTimer function to the mousemove event
 document.addEventListener('mousemove', resetMouseMoveTimer);
