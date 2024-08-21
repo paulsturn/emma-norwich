@@ -89,7 +89,8 @@ ul.links li{
 #overlay-author{
   position:absolute;
   background-color:#fff;
-  border:solid 4px #444;
+  border:solid 4px #212121;
+  box-shadow: 0 0 42px #121212d9;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -98,6 +99,11 @@ ul.links li{
   padding:.2rem;  
   z-index:50;
   visibility:0;
+}
+
+#overlay-author{
+  width:50%;
+  min-height:30%;
 }
 
 .overlay-inner{
