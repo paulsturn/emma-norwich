@@ -123,6 +123,7 @@ ul.links li{
   font-size: 22px;
   font-weight: 600;
   font-family: 'Courier New', Courier, monospace;
+  cursor:pointer;
 }
 
 #overlay h1{

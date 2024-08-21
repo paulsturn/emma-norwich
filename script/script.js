@@ -13,7 +13,7 @@ function addEventListenersToLetters() {
 
   });
 
-  // Close about overlay
+  // Close About overlay
   aboutClose.addEventListener('click', () => {
 
     tint.classList.remove("visible");
@@ -23,7 +23,6 @@ function addEventListenersToLetters() {
     about.classList.add("hidden");
 
   });
-
 
 
   // For  each letter
@@ -120,15 +119,15 @@ function resetMouseMoveTimer() {
 
 function showAboutBox(){
 
-// initial popup hidden
-popup.classList.remove("visible");
-popup.classList.add("hidden");
+  // initial popup hidden
+  popup.classList.remove("visible");
+  popup.classList.add("hidden");
 
-tint.classList.remove("hidden");
-tint.classList.add("visible");
+  tint.classList.remove("hidden");
+  tint.classList.add("visible");
 
-about.classList.remove("hidden");
-about.classList.add("visible");
+  about.classList.remove("hidden");
+  about.classList.add("visible");
 }
 
 
@@ -201,11 +200,21 @@ const letterElements = document.querySelectorAll('.letter');
 const imageElement = document.querySelector('.image');
 const popup = document.getElementById('overlay');
 const about = document.getElementById('overlay-about');
+const iconAbout = document.getElementById('iconAbout');
 const popupClose = document.getElementById('close-overlay');
 const aboutClose = document.getElementById('close-about');
 const tint = document.getElementById('tint');
 
 
+
+// Attach about button toggle
+iconAbout.addEventListener('click', () => {
+  about.classList.toggle("visible");
+  about.classList.toggle("hidden");
+
+  tint.classList.toggle("visible");
+  tint.classList.toggle("hidden");
+});
 
 // Attach the resetMouseMoveTimer function to the mousemove event
 document.addEventListener('mousemove', resetMouseMoveTimer);
