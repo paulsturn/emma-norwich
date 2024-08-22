@@ -60,9 +60,6 @@ authorClose.addEventListener('click', () => {
         const letterValue = element.getAttribute('data-letter');
         const imageElement = document.querySelector('.img-' + letterValue);
         const newImageUrl = 'img/Letters-Hover/' + letterValue + '.gif';
-
-        console.log(newImageUrl);
-
         imageElement.src = newImageUrl;
       });
 
@@ -128,6 +125,9 @@ function resetMouseMoveTimer() {
   // Clear the interval if the mouse moves
   clearInterval(randomLetterInterval);
 
+  // Remove any active animations
+  removeAnimations();
+
   // Start a new timeout that waits for n seconds of inactivity
   mouseMoveTimeout = setTimeout(() => {
       startRandomLetterTimer();
@@ -149,26 +149,6 @@ function showAboutBox(){
   about.classList.remove("hidden");
   about.classList.add("visible");
 }
-
-
-// function showAuthortBox(){
-
-//   // initial popup hidden
-//   popup.classList.remove("visible");
-//   popup.classList.add("hidden");
-
-//   // initial author hidden
-//   author.classList.remove("hidden");
-//   author.classList.add("visible");
-
-//   // initial tint hidden
-//   tint.classList.remove("hidden");
-//   tint.classList.add("visible");
-
-
-// }
-
-
 
 
 function getAlphabetIndex(letter) {
@@ -212,7 +192,7 @@ function displayDetails(letter) {
     if (currentLetter.links.hasOwnProperty(key)) {
 
       var linkURL = currentLetter.links[key];
-      var linkText = linkURL;
+      var linkText = linkURL.replace('https://', '');
 
       // append to result
       subChildHtml += '<li><a href="' + linkURL + '" target="_blank">' + linkText + '</a></li>';
@@ -250,6 +230,26 @@ const authorClose = document.getElementById('close-author');
 const tint = document.getElementById('tint');
 
 
+
+tint.addEventListener('click', () => {
+
+  // Click on tint closes overlays and popups
+  tint.classList.remove("visible");
+  tint.classList.add("hidden");
+
+  popup.classList.remove("visible");
+  popup.classList.add("hidden");
+
+  about.classList.remove("visible");
+  about.classList.add("hidden");
+
+  author.classList.remove("visible");
+  author.classList.add("hidden");
+
+})
+
+
+
 // Attach about button toggle
 iconAbout.addEventListener('click', () => {
   about.classList.toggle("visible");
@@ -262,9 +262,6 @@ iconAbout.addEventListener('click', () => {
 
 // Attach author button toggle
 iconAuthor.addEventListener('click', () => {
-
-  console.log('Icon ');
-
   author.classList.toggle("visible");
   author.classList.toggle("hidden");
 

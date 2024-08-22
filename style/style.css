@@ -22,6 +22,10 @@ body {
     user-select: none;
 }
 
+a{
+  color:rgb(144, 56, 56);
+}
+
 /* Grid layout */
 .wrapper {
   display: grid;
@@ -30,6 +34,12 @@ body {
   color: #444;
 }
 
+.header{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+}
 
 h1{
   font-family: 'aw-conqueror-didot', serif;
@@ -37,8 +47,15 @@ h1{
   padding: 10px;
   margin: 0;
 }
+
+h5{
+  font-size:14px;
+  padding:0;
+  margin:0;
+}
 ul.links{
-  padding: 0 0 0 0;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
 }
 ul.links li{
   font-size: 14px;
@@ -195,3 +212,77 @@ h1 span{
 .letter-40{width:40%;}
 .letter-30{width:30%;}
 .letter-37-5{width:37.5%;}
+
+
+
+
+
+/* Styles specifically for mobile devices */
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0 1%;
+  }
+
+  .wrapper {
+    display: inline;
+    grid-gap: 0px;
+    grid-template-columns: 56% 43.45%;
+    color: #444;
+  }
+  .letter{
+    padding:2px;
+  }
+  #overlay,
+  #overlay-about,
+  #overlay-author{
+    position:absolute;
+    width:90%;
+    min-height:40%;
+    padding:.1rem;  
+  }
+  .overlay-inner{
+    display:flex;
+    position: relative;
+    padding:1rem;
+    height:400px;
+  }
+  .overlay-right {
+    padding: 0;
+  }
+  #overlay .overlay-left{
+    width:66%;
+  }
+  #overlay h1{
+    font-size:2.2rem;
+    margin: 0 1rem 1rem 0;
+    padding:0;
+  }
+  #overlay .overlay-inner{
+    flex-direction: column;;
+  }
+
+  .scroll{
+    height:100%;
+    overflow-y: scroll;
+  }
+
+  .icons{
+    display:flex;
+  }
+
+  h1{
+    font-size:1.8rem;
+    margin: .6rem 0 1rem .5rem;
+    padding:0;
+  }
+
+  #overlay-about h1{
+    margin-left:0;
+  }
+
+  p{
+    font-size: 15px;
+    line-height: 1.4rem;
+    margin: 0 0 1rem 0;
+  }
+}
