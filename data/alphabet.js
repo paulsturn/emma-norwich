@@ -11,7 +11,7 @@ const alphabet = [
     { 
         letter: "B",
         title: "<span>B</span>ook <span>B</span>enches", 
-        body: "<p>To celebrate Norwich’s UNESCO City of Literature status, 8 benches were installed in 2023, inspired by books and authors from the local area. The benches feature a range of genres and are made from wood, metal, and stone. They can be found in: Gentleman’s Walk, Rampant Horse Street, All Saints Green, Rouen Road, Riverside, St-Martin-of-Palace-Plain, St George’s Street and Upper St Giles. The Book Bench walking trail takes you on an hour and 15-minute (5.7km) stroll around the city where you can see the 43 book titles featured within the designs of the benches.</p>",
+        body: "<p>To celebrate Norwich’s UNESCO City of Literature status, 8 benches were installed in 2023, inspired by books and authors from the local area. The benches feature a range of genres and are made from wood, metal, and stone. They can be found in: Gentleman’s Walk, Rampant Horse Street, All Saints Green, Rouen Road, Riverside, St-Martin-of-Palace-Plain, St George’s Street and Upper St Giles.</p><p>The Book Bench walking trail takes you on an hour and 15-minute (5.7km) stroll around the city where you can see the 43 book titles featured within the designs of the benches.</p>",
         links: {
             l1: "https://www.visitnorwich.co.uk/book-benches/",
         } 
@@ -19,7 +19,7 @@ const alphabet = [
     { 
         letter: "C",
         title: "<span>C</span>ity of Literature, <span>C</span>ity of Stories", 
-        body: "<p>Norwich is England’s first UNESCO City of literature, a network that consists of 42 cities representing 6 continents and 28 countries. Each city promotes their local creative community and pledges to champion UNESCO’s goal of fostering cultural diversity. Each May, the City of Literature Weekend takes place as part of Norfolk & Norwich Festival, featuring talks, workshops, and activities. Similarly, the ‘City of Stories’ tourism campaign (launched in 2014) is a tribute to Norwich’s ‘literary firsts’ as well as celebrating new narratives forming today. </p>",
+        body: "<p>Norwich is England’s first UNESCO City of literature, a network that consists of 42 cities representing 6 continents and 28 countries. Each city promotes their local creative community and pledges to champion UNESCO’s goal of fostering cultural diversity.</p><p>Each May, the City of Literature Weekend takes place as part of Norfolk & Norwich Festival, featuring talks, workshops, and activities. Similarly, the ‘City of Stories’ tourism campaign (launched in 2014) is a tribute to Norwich’s ‘literary firsts’ as well as celebrating new narratives forming today. </p>",
         links: {
             l1: "https://www.visitnorwich.co.uk/article/introducing-norwich-the-city-of-stories/",
             l2: "https://nationalcentreforwriting.org.uk/norwich-unesco-city-of-literature/network/",
@@ -29,7 +29,7 @@ const alphabet = [
     { 
         letter: "D",
         title: "<span>D</span>ragon Hall", 
-        body: "<p>This grade 1 listed building is home to the National Centre for Writing Literature house and writing hub. The great hall was built in 1427 by Robert Toppes and has since had many changes. It is renowned for its spectacular timber crown-post roof and intricately carved and painted dragon. The National Centre for Writing runs a year-round programme of events and courses as well as Dragon Hall offering guided tours of the building and venue hire. </p>",
+        body: "<p>This grade 1 listed building is home to the National Centre for Writing Literature house and writing hub. The great hall was built in 1427 by Robert Toppes and has since had many changes. It is renowned for its spectacular timber crown-post roof and intricately carved and painted dragon.</p><p>The National Centre for Writing runs a year-round programme of events and courses as well as Dragon Hall offering guided tours of the building and venue hire. </p>",
         links: {
             l1: "https://www.dragonhallnorwich.org.uk",
             l2: "https://nationalcentreforwriting.org.uk/visit-us/the-literature-house/dragon-hall/",
@@ -48,7 +48,7 @@ const alphabet = [
     { 
         letter: "F",
         title: "<span>F</span>orum", 
-        body: "<p>The Forum is home to Norfolk and Norwich’s Millenium Library which is one of the most popular public libraries in the UK and home to the Norfolk Heritage Centre, Business and IP Centre Norfolk, American Library, and Children’s Library.</p><p>The Forum opened in 2001 and was built on the site of the old Norwich Central Library, which was devastated by fire in 1994, destroying many books and precious documents. The Forum also hosts Norwich Science Festival, Norfolk Makers Festival, Norfolk Heritage Open days, and Norwich Games Festival, </p>",
+        body: "<p>The Forum is home to Norfolk and Norwich’s Millenium Library which is one of the most popular public libraries in the UK and home to the Norfolk Heritage Centre, Business and IP Centre Norfolk, American Library, and Children’s Library.</p><p>The Forum opened in 2001 and was built on the site of the old Norwich Central Library, which was devastated by fire in 1994, destroying many books and precious documents.</p><p>The Forum also hosts Norwich Science Festival, Norfolk Makers Festival, Norfolk Heritage Open days, and Norwich Games Festival, </p>",
         links: {
             l1: "https://theforumnorwich.co.uk ",
         } 
@@ -186,7 +186,7 @@ const alphabet = [
     { 
         letter: "V",
         title: "E<span>v</span>ents", 
-        body: "<p>Norwich holds many literary events throughout the year, promoting reading and knowledge. The City of Literature Weekend is part of Norfolk & Norwich Festival which celebrates Norwich’s UNESCO status as well as providing a platform for new and emerging voices. Other events include the Publishing Fair at Dragon Hall which is a celebration of local and regional publishing, The National Centre for Writing talks and lectures, tours, and the University of East Anglia writing events.</span><span>In October 2024 a brand-new Book Festival is coming to Norwich with author events, book signings, and more.</p>",
+        body: "<p>Norwich holds many literary events throughout the year, promoting reading and knowledge. The City of Literature Weekend is part of Norfolk & Norwich Festival which celebrates Norwich’s UNESCO status as well as providing a platform for new and emerging voices. Other events include the Publishing Fair at Dragon Hall which is a celebration of local and regional publishing, The National Centre for Writing talks and lectures, tours, and the University of East Anglia writing events.</p><p>In October 2024 a brand-new Book Festival is coming to Norwich with author events, book signings, and more.</p>",
         links: {
             l1: "https://norwichbookfestival.co.uk/",
             l2: "https://nnfestival.org.uk/whats-on/art-for-the-environment-artists-from-aer-international-residency-programme/  ",
