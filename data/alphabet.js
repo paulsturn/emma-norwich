@@ -169,7 +169,7 @@ const alphabet = [
     { 
         letter: "T",
         title: "<span>T</span>homas Browne", 
-        body: "<p>Sir Thomas Browne was a 17th century medical doctor who was widely travelled in his training and who settled in Norwich.</p><p>In 1635, he had written his first book, Religio Medici (‘The Religion of a Medical Man’), followed by Pseudodoxia Epidemica (‘Vulgar Errors’) in 1646, and Hydriotpahia (‘Urn Burial’) and The Garden of Cyrus, both in 1658. He was knighted by King Charles II and later died at his house in Haymarket, before being buried in St Peter Mancroft Church. In 1840, his skull was disinterred and was kept on display at the Norfolk and Norwich Hospital, and later reburied in his grave in 1922.</p>",
+        body: "<p>Sir Thomas Browne was a 17th century medical doctor who was widely travelled in his training and who settled in Norwich.</p><p>In 1635, he had written his first book, Religio Medici (‘The Religion of a Medical Man’), followed by Pseudodoxia Epidemica (‘Vulgar Errors’) in 1646, and Hydriotpahia (‘Urn Burial’) and The Garden of Cyrus, both in 1658. He was knighted by King Charles II and later died at his house in Haymarket, before being buried in St Peter Mancroft Church.</p><p>In 1840, his skull was disinterred and was kept on display at the Norfolk and Norwich Hospital, and later reburied in his grave in 1922.</p>",
         links: {
             l1: "https://www.sirthomasbrowne.org.uk",
             l2: "http://www.norwich-heritage.co.uk/monuments/Thomas%20Browne/Thomas_Browne.shtm",
