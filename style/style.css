@@ -4,9 +4,6 @@
     --padding-200: 12px;
     --padding-300: 18px;
     --padding-400: 24px;
-
-    --btm-blue-100: #0d3c8c;
-
 }
 
 html {
@@ -118,6 +115,11 @@ ul.links li{
   visibility:0;
 }
 
+#overlay-about h1{
+  margin-left:0;
+  padding-left:0;
+}
+
 #overlay-author{
   width:50%;
   min-height:30%;
@@ -172,11 +174,11 @@ h1 span{
 
 .tint{
   visibility:0;
-  position:absolute;
+  position:fixed;
   top:0;
   left:0;
-  width:100%;
-  height:100%;
+  right:0;
+  bottom:0;
   background-color: #00000080;
   z-index:50;
 }
@@ -229,6 +231,12 @@ h1 span{
     grid-template-columns: 56% 43.45%;
     color: #444;
   }
+
+  /* .b {
+    display:none;
+  } */
+
+
   .letter{
     padding:2px;
   }
