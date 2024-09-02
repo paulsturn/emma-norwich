@@ -31,6 +31,10 @@ a{
   color: #444;
 }
 
+.wrapper-mobile{
+  display:none;
+}
+
 .header{
   display:flex;
   flex-direction: row;
@@ -227,17 +231,24 @@ h1 span{
   }
 
   .wrapper {
-    display: inline;
+    display: none;
     grid-gap: 0px;
     grid-template-columns: 56% 43.45%;
     color: #444;
   }
 
-  /* .b {
+  .wrapper-mobile{
+    display:flex;
+  }
+
+  .wrapper-mobile .col-25{
+    width:25%;
+  }
+
+  #w_image{
     display:none;
-  } */
-
-
+  }
+ 
   .letter{
     padding:2px;
   }
