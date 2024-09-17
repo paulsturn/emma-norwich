@@ -59,18 +59,18 @@ authorClose.addEventListener('click', () => {
       element.addEventListener('mouseover', () => {
         const letterValue = element.getAttribute('data-letter');
         const imageElement = document.querySelector('.img-' + letterValue);
-        const newImageUrl = 'img/Letters-Hover/' + letterValue + '.gif';
+        const newImageUrl = '/img/Letters-Hover/' + letterValue + '.gif';
         imageElement.src = newImageUrl;
       });
 
       // Mouseout event 
       element.addEventListener('mouseout', () => {
-        // element.style.backgroundColor = '';
+        // element.style.backgroundColor = '';   
         const letterValue = element.getAttribute('data-letter');
         const imageElement = document.querySelector('.img-' + letterValue);
-
         const newImageUrl = 'img/Letters/' + letterValue + '.png';
         imageElement.src = newImageUrl;
+
       });
 
   });
@@ -105,6 +105,9 @@ function startRandomLetterTimer() {
 
 function removeAnimations(){
 
+  
+console.log('RemoveAnimations');
+
   for (let i = 0; i < 26; i++) {
     let letter = String.fromCharCode(97 + i);
     
@@ -126,7 +129,7 @@ function resetMouseMoveTimer() {
   clearInterval(randomLetterInterval);
 
   // Remove any active animations
-  removeAnimations();
+  //removeAnimations();
 
   // Start a new timeout that waits for n seconds of inactivity
   mouseMoveTimeout = setTimeout(() => {
