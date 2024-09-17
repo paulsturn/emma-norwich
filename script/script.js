@@ -99,14 +99,11 @@ function startRandomLetterTimer() {
     const newImageUrl = 'img/Letters-Hover/' + letterValue + '.gif';
     imageElement.src = newImageUrl;
 
-  }, 6000);
+  }, 3000);
 
 }
 
 function removeAnimations(){
-
-  
-console.log('RemoveAnimations');
 
   for (let i = 0; i < 26; i++) {
     let letter = String.fromCharCode(97 + i);
@@ -116,7 +113,6 @@ console.log('RemoveAnimations');
 
     imageElement.src = newImageUrl;
   }
-
 
 }
 
@@ -134,7 +130,7 @@ function resetMouseMoveTimer() {
   // Start a new timeout that waits for n seconds of inactivity
   mouseMoveTimeout = setTimeout(() => {
       startRandomLetterTimer();
-  }, 6000); // 5000 milliseconds = 5 seconds
+  }, 3000); 
 }
 
 function showAboutBox(){
@@ -275,6 +271,8 @@ iconAuthor.addEventListener('click', () => {
 
 // Attach the resetMouseMoveTimer function to the mousemove event
 document.addEventListener('mousemove', resetMouseMoveTimer);
+
+removeAnimations();
 
 // Start the initial timer in case the mouse doesn't move right away
 resetMouseMoveTimer();
